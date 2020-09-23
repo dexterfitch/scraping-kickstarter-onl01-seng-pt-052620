@@ -12,8 +12,8 @@ def create_project_hash
     projects[title.to_sym] = {
       :image_link => project.css('.project-thumbnail img').attr('src').value
       :description => project.css('.bbcard_blurb').text
-      :loc => project.css('.location-name').text
-      :per => project.css('.funded strong').text
+      :location => project.css('.location-name').text
+      :percent_funded => project.css('.funded strong').text
     }
   }
 end
