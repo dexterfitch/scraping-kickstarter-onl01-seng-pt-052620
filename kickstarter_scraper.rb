@@ -10,9 +10,9 @@ def create_project_hash
   projects_html.each { |project|
     title = project.css('.bbcard_name a').text
     projects[title.to_sym] = {
-      :image_link => project.css('.project-thumbnail img').attr('src').value
-      :description => project.css('.bbcard_blurb').text
-      :location => project.css('.location-name').text
+      :image_link => project.css('.project-thumbnail img').attr('src').value,
+      :description => project.css('.bbcard_blurb').text,
+      :location => project.css('.location-name').text,
       :percent_funded => project.css('.funded strong').text
     }
   }
