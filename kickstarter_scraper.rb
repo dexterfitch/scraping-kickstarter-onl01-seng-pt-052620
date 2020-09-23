@@ -8,14 +8,12 @@ def create_project_hash
   projects = {}
 
   projects_html.each { |project|
-
+    title = project.css('.bbcard_name a').text
+    img = project.css('.project-thumbnail img').attr('src').value
+    desc = project.css('.bbcard_blurb').text
+    loc = project.css('.location-name').text
+    per = project.css('.funded strong').text
   }
-  #title: NANINANI.css('.bbcard_name a').text.strip
-  #img: NANINANI.css('.project-thumbnail img').attr('src').value
-  #desc: NANINANI.css('.bbcard_blurb').text.strip
-  #loc: NANINANI.css('.location-name').text.strip
-  # per: NANINANI.css('.funded strong').text.strip
-  binding.pry
 end
 
 create_project_hash
