@@ -6,3 +6,5 @@ def create_project_hash
   html = Nokogiri::HTML(raw)
   binding.pry
 end
+
+create_project_hash
