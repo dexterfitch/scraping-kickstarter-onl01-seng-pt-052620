@@ -8,6 +8,7 @@ def create_project_hash
   #title: NANINANI.css('.bbcard_name a').text.strip
   #img: NANINANI.css('.project-thumbnail img').attr('src').value
   #desc: NANINANI.css('.bbcard_blurb').text.strip
+  #loc: NANINANI.css('.location-name').text.strip
   binding.pry
 end
 
