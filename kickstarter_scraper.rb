@@ -1,5 +1,5 @@
 require 'nokogiri'
 
 def create_project_hash
-  raw = open('fixtures/kickstarter.html')
+  raw = File.read('fixtures/kickstarter.html')
 end
